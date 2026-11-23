@@ -1,0 +1,3919 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="description"
+        content="GameZone: descubre videojuegos, explora sus fichas y accede a sus tiendas y sitios oficiales." />
+
+  <meta name="theme-color" content="#090909" />
+
+  <title>GameZone | Black & White</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <a class="saltar" href="#catalogo">
+    Saltar al catálogo
+  </a>
+
+  <!-- ENCABEZADO -->
+  <header class="cabecera">
+    <div class="barra contenedor">
+
+      <a href="#inicio" class="logo"
+         aria-label="GameZone, ir al inicio">
+        GAME<span>ZONE</span>
+        <span class="logo-punto">.</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#perfil">Mi perfil</a>
+        <a href="#centro-gamer">GameZone 2.0</a>
+        <a href="#gamezone-3">GameZone 3.0</a>
+        <a href="#gamezone-4">GameZone 4.0</a>
+        <a href="#acerca">Proyecto</a>
+      </nav>
+
+      <a class="nav-accion" href="#catalogo">
+        Explorar <span aria-hidden="true">↗</span>
+      </a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PORTADA PRINCIPAL -->
+    <section class="hero" id="inicio"
+             aria-labelledby="hero-titulo">
+
+      <div class="contenedor hero-contenido">
+
+        <div class="hero-texto">
+
+          <p class="eyebrow">
+            <span class="punto-blanco"></span>
+            TU BASE DE DATOS GAMER
+          </p>
+
+          <h1 id="hero-titulo">
+            DESCUBRE<br />
+            TU PRÓXIMO<br />
+            <span>JUEGO.</span>
+          </h1>
+
+          <p class="hero-descripcion">
+            Un catálogo creado para explorar videojuegos,
+            conocer sus detalles y encontrar sus páginas
+            o tiendas oficiales. Sin instaladores,
+            sin descargas sospechosas.
+          </p>
+
+          <div class="hero-botones">
+
+            <a class="boton boton-claro" href="#catalogo">
+              Explorar catálogo
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <a class="boton boton-contorno" href="#acerca">
+              Cómo funciona
+            </a>
+
+          </div>
+
+          <div class="hero-numeros"
+               aria-label="Información del catálogo">
+
+            <div>
+              <strong id="total-hero">100</strong>
+              <span>VIDEOJUEGOS</span>
+            </div>
+
+            <div>
+              <strong>10</strong>
+              <span>CATEGORÍAS</span>
+            </div>
+
+            <div>
+              <strong>01</strong>
+              <span>UNIVERSO GAMER</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- DISEÑO VISUAL DE LA PORTADA -->
+        <div class="hero-arte" aria-hidden="true">
+
+          <div class="marco marco-1"></div>
+          <div class="marco marco-2"></div>
+          <div class="marco marco-3"></div>
+
+          <div class="arte-etiqueta">
+            GZ / 001 — 100
+          </div>
+
+          <div class="arte-central">
+            <span>G</span>
+            <span>Z</span>
+          </div>
+
+          <div class="arte-pie">
+            BLACK / WHITE
+            <span>2026 EDITION</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FRANJA INFORMATIVA -->
+    <section class="franja"
+             aria-label="Características de GameZone">
+
+      <div class="contenedor franja-contenido">
+        <span>CATÁLOGO ORGANIZADO</span>
+        <b>✦</b>
+
+        <span>ENLACES OFICIALES</span>
+        <b>✦</b>
+
+        <span>TUS FAVORITOS</span>
+        <b>✦</b>
+
+        <span>DISEÑO BLACK & WHITE</span>
+      </div>
+
+    </section>
+
+    <!-- FASE 5 — VIDEOJUEGOS DESTACADOS -->
+    <section class="destacados contenedor"
+             id="destacados"
+             aria-labelledby="destacados-titulo">
+
+      <div class="destacados-encabezado">
+
+        <div>
+          <p class="eyebrow">/ SELECCIÓN GAMEZONE</p>
+
+          <h2 id="destacados-titulo">
+            JUEGOS <span>DESTACADOS.</span>
+          </h2>
+
+          <p class="destacados-descripcion">
+            Descubre una selección especial de nuestro catálogo.
+          </p>
+        </div>
+
+        <div class="destacados-controles">
+          <button type="button"
+                  id="destacados-anterior"
+                  aria-label="Ver destacados anteriores">
+            ←
+          </button>
+
+          <button type="button"
+                  id="destacados-siguiente"
+                  aria-label="Ver destacados siguientes">
+            →
+          </button>
+        </div>
+
+      </div>
+
+      <div class="destacados-carrusel"
+           id="destacados-carrusel"
+           aria-label="Videojuegos destacados">
+      </div>
+
+    </section>
+
+    <!-- CATÁLOGO DE VIDEOJUEGOS -->
+    <section class="catalogo contenedor"
+             id="catalogo"
+             aria-labelledby="catalogo-titulo">
+
+      <div class="seccion-encabezado">
+
+        <div>
+          <p class="eyebrow">
+            / EXPLORA EL UNIVERSO
+          </p>
+
+          <h2 id="catalogo-titulo">
+            CATÁLOGO
+            <span>DE JUEGOS</span>
+          </h2>
+        </div>
+
+        <p class="seccion-ayuda">
+          Filtra, guarda tus favoritos y visita
+          el enlace oficial del videojuego.
+        </p>
+
+      </div>
+
+      <!-- FASE 4 — CATEGORÍAS INTELIGENTES -->
+      <section class="categorias-gamezone"
+               aria-labelledby="titulo-categorias">
+
+        <div class="categorias-encabezado">
+          <div>
+            <p class="eyebrow">/ ENCUENTRA TU ESTILO</p>
+            <h3 id="titulo-categorias">
+              EXPLORA POR <span>CATEGORÍA</span>
+            </h3>
+          </div>
+
+          <p>
+            Selecciona una categoría para descubrir juegos.
+          </p>
+        </div>
+
+        <div class="categorias-lista"
+             id="categorias-rapidas"
+             aria-label="Categorías de videojuegos">
+        </div>
+
+      </section>
+
+      <!-- PANEL DE BÚSQUEDA Y FILTROS -->
+      <div class="panel-filtros">
+
+        <label class="campo-buscar" for="buscador">
+
+          <span class="label-oculto">
+            Buscar videojuego
+          </span>
+
+          <span class="lupa" aria-hidden="true">
+            ⌕
+          </span>
+
+          <input
+            id="buscador"
+            type="search"
+            placeholder="Buscar videojuegos..."
+            autocomplete="off"
+          />
+
+        </label>
+
+        <!-- FILTRO POR GÉNERO -->
+        <label class="campo-select" for="filtro-genero">
+
+          <span class="label-oculto">
+            Filtrar por género
+          </span>
+
+          <select id="filtro-genero">
+            <option value="todos">
+              Todas las categorías
+            </option>
+          </select>
+
+        </label>
+
+        <!-- ORDEN ALFABÉTICO -->
+        <label class="campo-select campo-orden" for="orden">
+
+          <span class="label-oculto">
+            Ordenar catálogo
+          </span>
+
+          <select id="orden">
+            <option value="original">
+              Orden original
+            </option>
+
+            <option value="az">
+              Nombre A → Z
+            </option>
+
+            <option value="za">
+              Nombre Z → A
+            </option>
+          </select>
+
+        </label>
+
+        <!-- FAVORITOS -->
+        <button
+          class="favoritos-toggle"
+          id="solo-favoritos"
+          type="button"
+          aria-pressed="false">
+
+          ♡ Solo favoritos
+
+        </button>
+
+      </div>
+
+      <!-- ESTADO DEL CATÁLOGO -->
+      <div class="estado-catalogo">
+
+        <p id="contador"
+           role="status"
+           aria-live="polite">
+          Cargando catálogo...
+        </p>
+
+        <button
+          class="limpiar"
+          id="limpiar-filtros"
+          type="button">
+
+          Limpiar filtros ↺
+
+        </button>
+
+      </div>
+
+      <!-- CUADRÍCULA DE VIDEOJUEGOS -->
+      <div
+        class="cuadricula"
+        id="lista-juegos"
+        aria-live="polite">
+      </div>
+
+      <!-- MENSAJE SIN RESULTADOS -->
+      <div class="sin-resultados"
+           id="sin-resultados"
+           hidden>
+
+        <h3>
+          No encontramos juegos con esos filtros.
+        </h3>
+
+        <p>
+          Prueba con otro nombre o categoría.
+        </p>
+
+      </div>
+
+      <!-- MOSTRAR MÁS JUEGOS -->
+      <div class="mas-contenedor">
+
+        <button
+          class="boton boton-contorno boton-mas"
+          id="mostrar-mas"
+          type="button"
+          hidden>
+
+          Mostrar más videojuegos ↓
+
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- FASE 6 — RECOMENDACIONES -->
+    <section class="recomendaciones contenedor"
+             id="recomendaciones"
+             aria-labelledby="recomendaciones-titulo">
+
+      <div class="recomendaciones-encabezado">
+
+        <div>
+          <p class="eyebrow">/ DESCUBRE ALGO NUEVO</p>
+
+          <h2 id="recomendaciones-titulo">
+            RECOMENDADOS <span>PARA TI.</span>
+          </h2>
+
+          <p id="recomendaciones-mensaje">
+            Descubre videojuegos que podrían gustarte.
+          </p>
+        </div>
+
+        <button
+          class="boton-sorpresa"
+          id="juego-sorpresa"
+          type="button">
+          🎲 Sorpréndeme
+        </button>
+
+      </div>
+
+      <div class="recomendaciones-cuadricula"
+           id="lista-recomendaciones">
+      </div>
+
+    </section>
+
+    <!-- FASES 7 A 16 — PERFIL GAMER -->
+    <section class="perfil-gamer contenedor"
+             id="perfil"
+             aria-labelledby="perfil-titulo">
+
+      <div class="seccion-encabezado">
+        <div>
+          <p class="eyebrow">/ TU ESPACIO GAMER</p>
+
+          <h2 id="perfil-titulo">
+            MI PERFIL <span>GAMER.</span>
+          </h2>
+        </div>
+
+        <p class="seccion-ayuda">
+          Personaliza tu perfil, consulta tus estadísticas
+          y descubre tus logros.
+        </p>
+      </div>
+
+      <div class="gz-perfil-panel">
+
+        <div class="gz-perfil-identidad">
+          <div class="gz-avatar"
+               id="gz-avatar"
+               aria-hidden="true">GZ</div>
+
+          <div>
+            <p class="eyebrow">/ JUGADOR GAMEZONE</p>
+            <h3 id="gz-nombre-visible">Jugador GZ</h3>
+            <p id="gz-rango">Explorador</p>
+          </div>
+        </div>
+
+        <div class="gz-perfil-edicion">
+          <label for="gz-nombre-input">
+            Tu nombre gamer
+          </label>
+
+          <div class="gz-perfil-formulario">
+            <input
+              id="gz-nombre-input"
+              type="text"
+              maxlength="24"
+              placeholder="Escribe tu nombre gamer"
+              autocomplete="nickname"
+            />
+
+            <button id="gz-guardar-nombre"
+                    type="button">
+              Guardar nombre
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ESTADÍSTICAS -->
+      <div class="gz-estadisticas">
+
+        <article class="gz-estadistica">
+          <span>JUEGOS DEL CATÁLOGO</span>
+          <strong id="gz-total-juegos">0</strong>
+        </article>
+
+        <article class="gz-estadistica">
+          <span>MIS FAVORITOS</span>
+          <strong id="gz-total-favoritos">0</strong>
+        </article>
+
+        <article class="gz-estadistica">
+          <span>GÉNERO PREFERIDO</span>
+          <strong id="gz-genero-preferido">—</strong>
+        </article>
+
+        <article class="gz-estadistica">
+          <span>CATÁLOGO GUARDADO</span>
+          <strong id="gz-porcentaje">0%</strong>
+        </article>
+
+      </div>
+
+      <!-- LOGROS -->
+      <div class="gz-bloque-logros">
+        <div class="gz-bloque-titulo">
+          <div>
+            <p class="eyebrow">/ TUS RECOMPENSAS</p>
+            <h3>LOGROS <span>GAMER.</span></h3>
+          </div>
+          <p id="gz-logros-contador">0 logros desbloqueados</p>
+        </div>
+
+        <div class="gz-logros-lista" id="gz-logros">
+        </div>
+      </div>
+
+      <!-- BIBLIOTECA -->
+      <div class="gz-biblioteca">
+        <div class="gz-bloque-titulo">
+          <div>
+            <p class="eyebrow">/ TU COLECCIÓN</p>
+            <h3>MI <span>BIBLIOTECA.</span></h3>
+          </div>
+
+          <a href="#catalogo" class="boton boton-contorno">
+            Explorar más juegos ↗
+          </a>
+        </div>
+
+        <p id="gz-biblioteca-mensaje">
+          Tus videojuegos favoritos aparecerán aquí.
+        </p>
+
+        <div id="gz-biblioteca-lista"
+             class="gz-biblioteca-cuadricula">
+        </div>
+      </div>
+
+      <!-- COMPARADOR -->
+      <div class="gz-comparador">
+        <div class="gz-bloque-titulo">
+          <div>
+            <p class="eyebrow">/ ENCUENTRA TU FAVORITO</p>
+            <h3>COMPARAR <span>JUEGOS.</span></h3>
+          </div>
+        </div>
+
+        <div class="gz-comparador-controles">
+          <label for="gz-comparar-uno">
+            Primer videojuego
+          </label>
+
+          <select id="gz-comparar-uno">
+            <option value="">Seleccionar juego</option>
+          </select>
+
+          <label for="gz-comparar-dos">
+            Segundo videojuego
+          </label>
+
+          <select id="gz-comparar-dos">
+            <option value="">Seleccionar juego</option>
+          </select>
+
+          <button type="button" id="gz-comparar-boton">
+            Comparar videojuegos
+          </button>
+        </div>
+
+        <div id="gz-comparador-resultado"
+             aria-live="polite">
+        </div>
+      </div>
+
+      <!-- PERSONALIZACIÓN -->
+      <div class="gz-personalizacion">
+        <div>
+          <p class="eyebrow">/ PERSONALIZA TU EXPERIENCIA</p>
+          <h3>APARIENCIA <span>GAMEZONE.</span></h3>
+        </div>
+
+        <div class="gz-temas">
+          <button type="button"
+                  id="gz-tema-oscuro"
+                  aria-pressed="true">
+            🌙 Modo oscuro
+          </button>
+
+          <button type="button"
+                  id="gz-tema-claro"
+                  aria-pressed="false">
+            ☀ Modo claro
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+<!-- ==========================================
+     GAMEZONE 2.0 — FASES 17 A 26
+     CENTRO DE ACTIVIDAD GAMER
+========================================== -->
+
+<section
+  class="gz2-centro contenedor"
+  id="centro-gamer"
+  aria-labelledby="gz2-titulo"
+>
+
+  <!-- ENCABEZADO PRINCIPAL -->
+
+  <div class="gz2-encabezado">
+
+    <div>
+      <p class="eyebrow">
+        / GAMEZONE 2.0
+      </p>
+
+      <h2 id="gz2-titulo">
+        CENTRO DE
+        <span>ACTIVIDAD GAMER.</span>
+      </h2>
+
+      <p class="gz2-descripcion">
+        Organiza tus videojuegos, registra tus
+        opiniones y descubre tu progreso gamer.
+      </p>
+    </div>
+
+    <div class="gz2-version">
+      <span>GAMEZONE</span>
+      <strong>2.0</strong>
+    </div>
+
+  </div>
+
+
+  <!-- ========================================
+       FASE 24 — PANEL DE ACTIVIDAD
+  ======================================== -->
+
+  <div class="gz2-panel-actividad">
+
+    <div class="gz2-titulo-bloque">
+      <div>
+        <p class="eyebrow">
+          / ESTADÍSTICAS
+        </p>
+
+        <h3>
+          MI ACTIVIDAD
+          <span>GAMER.</span>
+        </h3>
+      </div>
+
+      <span class="gz2-etiqueta">
+        RESUMEN PERSONAL
+      </span>
+    </div>
+
+    <div class="gz2-estadisticas">
+
+      <article class="gz2-stat">
+        <span>★</span>
+        <strong id="gz2-total-valorados">0</strong>
+        <p>Juegos valorados</p>
+      </article>
+
+      <article class="gz2-stat">
+        <span>✎</span>
+        <strong id="gz2-total-resenas">0</strong>
+        <p>Reseñas escritas</p>
+      </article>
+
+      <article class="gz2-stat">
+        <span>◷</span>
+        <strong id="gz2-total-pendientes">0</strong>
+        <p>Juegos pendientes</p>
+      </article>
+
+      <article class="gz2-stat">
+        <span>✓</span>
+        <strong id="gz2-total-completados">0</strong>
+        <p>Juegos completados</p>
+      </article>
+
+    </div>
+
+  </div>
+
+
+  <!-- ========================================
+       FASES 17 Y 18
+       VALORACIONES Y RESEÑAS
+  ======================================== -->
+
+  <div class="gz2-seccion" id="gz2-opiniones">
+
+    <div class="gz2-titulo-bloque">
+      <div>
+        <p class="eyebrow">
+          / TU OPINIÓN IMPORTA
+        </p>
+
+        <h3>
+          VALORACIONES Y
+          <span>RESEÑAS.</span>
+        </h3>
+      </div>
+    </div>
+
+    <div class="gz2-formulario">
+
+      <label for="gz2-juego-valorar">
+        Selecciona un videojuego
+      </label>
+
+      <select id="gz2-juego-valorar">
+        <option value="">
+          Seleccionar videojuego
+        </option>
+      </select>
+
+      <label for="gz2-puntuacion">
+        Tu puntuación
+      </label>
+
+      <select id="gz2-puntuacion">
+        <option value="5">
+          ★★★★★ — Excelente
+        </option>
+
+        <option value="4">
+          ★★★★☆ — Muy bueno
+        </option>
+
+        <option value="3">
+          ★★★☆☆ — Bueno
+        </option>
+
+        <option value="2">
+          ★★☆☆☆ — Regular
+        </option>
+
+        <option value="1">
+          ★☆☆☆☆ — No me gustó
+        </option>
+      </select>
+
+      <label for="gz2-texto-resena">
+        Escribe tu reseña
+      </label>
+
+      <textarea
+        id="gz2-texto-resena"
+        rows="5"
+        maxlength="1000"
+        placeholder="¿Qué te pareció este videojuego?"
+      ></textarea>
+
+      <button
+        type="button"
+        id="gz2-guardar-resena"
+        class="gz2-boton-principal"
+      >
+        ★ Guardar valoración
+      </button>
+
+    </div>
+
+    <div class="gz2-subtitulo">
+      <h4>MIS OPINIONES</h4>
+
+      <span id="gz2-contador-resenas">
+        0 opiniones
+      </span>
+    </div>
+
+    <div
+      class="gz2-lista-resenas"
+      id="gz2-lista-resenas"
+      aria-live="polite"
+    >
+      <p class="gz2-vacio">
+        Todavía no has escrito reseñas.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- ========================================
+       FASES 19 Y 20
+       LISTA DE PENDIENTES Y ESTADOS
+  ======================================== -->
+
+  <div class="gz2-seccion" id="gz2-coleccion">
+
+    <div class="gz2-titulo-bloque">
+
+      <div>
+        <p class="eyebrow">
+          / ORGANIZA TUS AVENTURAS
+        </p>
+
+        <h3>
+          MI COLECCIÓN
+          <span>PERSONAL.</span>
+        </h3>
+      </div>
+
+    </div>
+
+    <div class="gz2-formulario">
+
+      <label for="gz2-juego-estado">
+        Videojuego
+      </label>
+
+      <select id="gz2-juego-estado">
+        <option value="">
+          Seleccionar videojuego
+        </option>
+      </select>
+
+      <label for="gz2-estado">
+        Estado del videojuego
+      </label>
+
+      <select id="gz2-estado">
+
+        <option value="pendiente">
+          ◷ Pendiente
+        </option>
+
+        <option value="jugando">
+          ▶ Jugando actualmente
+        </option>
+
+        <option value="completado">
+          ✓ Completado
+        </option>
+
+      </select>
+
+      <button
+        type="button"
+        id="gz2-guardar-estado"
+        class="gz2-boton-principal"
+      >
+        Guardar en mi colección
+      </button>
+
+    </div>
+
+    <!-- FILTROS DE ESTADO -->
+
+    <div class="gz2-filtros-estado">
+
+      <button
+        type="button"
+        class="gz2-filtro activo"
+        data-gz2-estado="todos"
+      >
+        Todos
+      </button>
+
+      <button
+        type="button"
+        class="gz2-filtro"
+        data-gz2-estado="pendiente"
+      >
+        Pendientes
+      </button>
+
+      <button
+        type="button"
+        class="gz2-filtro"
+        data-gz2-estado="jugando"
+      >
+        Jugando
+      </button>
+
+      <button
+        type="button"
+        class="gz2-filtro"
+        data-gz2-estado="completado"
+      >
+        Completados
+      </button>
+
+    </div>
+
+    <div
+      class="gz2-lista-coleccion"
+      id="gz2-lista-coleccion"
+      aria-live="polite"
+    >
+      <p class="gz2-vacio">
+        Tu colección todavía está vacía.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- ========================================
+       FASE 21 — HISTORIAL
+  ======================================== -->
+
+  <div class="gz2-seccion" id="gz2-historial">
+
+    <div class="gz2-titulo-bloque">
+
+      <div>
+        <p class="eyebrow">
+          / TUS ÚLTIMAS VISITAS
+        </p>
+
+        <h3>
+          HISTORIAL DE
+          <span>EXPLORACIÓN.</span>
+        </h3>
+      </div>
+
+      <button
+        type="button"
+        id="gz2-limpiar-historial"
+        class="gz2-boton-secundario"
+      >
+        Limpiar historial
+      </button>
+
+    </div>
+
+    <div
+      class="gz2-lista-historial"
+      id="gz2-lista-historial"
+      aria-live="polite"
+    >
+      <p class="gz2-vacio">
+        Todavía no has visitado fichas.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- ========================================
+       FASE 22 — RANKING PERSONAL
+  ======================================== -->
+
+  <div class="gz2-seccion" id="gz2-ranking">
+
+    <div class="gz2-titulo-bloque">
+
+      <div>
+        <p class="eyebrow">
+          / TUS MEJORES JUEGOS
+        </p>
+
+        <h3>
+          MI RANKING
+          <span>GAMER.</span>
+        </h3>
+      </div>
+
+      <span class="gz2-etiqueta">
+        TOP PERSONAL
+      </span>
+
+    </div>
+
+    <div
+      class="gz2-ranking-lista"
+      id="gz2-ranking-lista"
+      aria-live="polite"
+    >
+      <p class="gz2-vacio">
+        Valora videojuegos para crear tu ranking.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- ========================================
+       FASE 23 — FILTROS INTELIGENTES
+  ======================================== -->
+
+  <div class="gz2-seccion" id="gz2-filtros">
+
+    <div class="gz2-titulo-bloque">
+
+      <div>
+        <p class="eyebrow">
+          / BÚSQUEDA AVANZADA
+        </p>
+
+        <h3>
+          FILTROS
+          <span>INTELIGENTES.</span>
+        </h3>
+      </div>
+
+    </div>
+
+    <div class="gz2-filtros-avanzados">
+
+      <div>
+        <label for="gz2-filtro-plataforma">
+          Plataforma
+        </label>
+
+        <select id="gz2-filtro-plataforma">
+          <option value="todas">
+            Todas las plataformas
+          </option>
+        </select>
+      </div>
+
+      <div>
+        <label for="gz2-filtro-puntuacion">
+          Valoración
+        </label>
+
+        <select id="gz2-filtro-puntuacion">
+
+          <option value="todas">
+            Todas las valoraciones
+          </option>
+
+          <option value="5">
+            5 estrellas
+          </option>
+
+          <option value="4">
+            4 estrellas
+          </option>
+
+          <option value="3">
+            3 estrellas
+          </option>
+
+          <option value="2">
+            2 estrellas
+          </option>
+
+          <option value="1">
+            1 estrella
+          </option>
+
+        </select>
+      </div>
+
+      <div>
+        <label for="gz2-filtro-estado">
+          Estado
+        </label>
+
+        <select id="gz2-filtro-estado">
+
+          <option value="todos">
+            Todos los estados
+          </option>
+
+          <option value="pendiente">
+            Pendiente
+          </option>
+
+          <option value="jugando">
+            Jugando
+          </option>
+
+          <option value="completado">
+            Completado
+          </option>
+
+        </select>
+      </div>
+
+      <button
+        type="button"
+        id="gz2-aplicar-filtros"
+        class="gz2-boton-principal"
+      >
+        Aplicar filtros
+      </button>
+
+      <button
+        type="button"
+        id="gz2-limpiar-filtros"
+        class="gz2-boton-secundario"
+      >
+        Restablecer filtros
+      </button>
+
+    </div>
+
+    <p
+      id="gz2-resultados-contador"
+      class="gz2-resultados-contador"
+      role="status"
+    >
+      Selecciona los filtros para explorar.
+    </p>
+
+    <div
+      id="gz2-resultados-filtros"
+      class="gz2-resultados-filtros"
+      aria-live="polite"
+    ></div>
+
+  </div>
+
+
+  <!-- ========================================
+       FASE 25 — COPIAS DE SEGURIDAD
+  ======================================== -->
+
+  <div class="gz2-seccion" id="gz2-datos">
+
+    <div class="gz2-titulo-bloque">
+
+      <div>
+        <p class="eyebrow">
+          / PROTEGE TU PROGRESO
+        </p>
+
+        <h3>
+          MIS DATOS
+          <span>GAMEZONE.</span>
+        </h3>
+      </div>
+
+    </div>
+
+    <p class="gz2-descripcion">
+      Guarda una copia de tus preferencias,
+      favoritos, reseñas, valoraciones y
+      colección personal en un archivo JSON.
+    </p>
+
+    <div class="gz2-datos-botones">
+
+      <button
+        type="button"
+        id="gz2-exportar"
+        class="gz2-boton-principal"
+      >
+        ↓ Exportar mis datos
+      </button>
+
+      <button
+        type="button"
+        id="gz2-importar-boton"
+        class="gz2-boton-secundario"
+      >
+        ↑ Importar mis datos
+      </button>
+
+      <input
+        type="file"
+        id="gz2-importar-archivo"
+        accept=".json,application/json"
+        aria-label="Seleccionar copia de seguridad JSON"
+        hidden
+      />
+
+    </div>
+
+    <p class="gz2-nota">
+      Tus datos se guardan localmente en este
+      navegador. Puedes exportarlos para
+      conservar una copia.
+    </p>
+
+  </div>
+
+
+  <!-- ========================================
+       FASE 26 — EXPERIENCIA GAMER
+  ======================================== -->
+
+  <div class="gz2-final">
+
+    <div>
+      <p class="eyebrow">
+        / TU AVENTURA CONTINÚA
+      </p>
+
+      <h3>
+        CADA JUEGO ES
+        <span>UNA NUEVA HISTORIA.</span>
+      </h3>
+
+      <p>
+        Descubre, organiza y disfruta
+        tu universo gamer.
+      </p>
+    </div>
+
+    <a href="#catalogo" class="gz2-boton-principal">
+      Explorar videojuegos ↗
+    </a>
+
+  </div>
+
+</section>
+
+<!-- ==========================================
+     FIN — GAMEZONE 2.0
+     FASES 17 A 26
+========================================== -->
+
+<!-- ==========================================
+     GAMEZONE 3.0 — BLACK & WHITE
+     FASES 27 A 36
+     CENTRO DE DESCUBRIMIENTO GAMER
+========================================== -->
+
+<section
+  class="gz3-centro contenedor"
+  id="gamezone-3"
+  aria-labelledby="gz3-titulo"
+>
+
+  <!-- ENCABEZADO PRINCIPAL -->
+
+  <div class="gz3-encabezado">
+
+    <div class="gz3-encabezado-texto">
+
+      <p class="eyebrow">
+        / GAMEZONE 3.0 — NUEVA GENERACIÓN
+      </p>
+
+      <h2 id="gz3-titulo">
+        DESCUBRE.
+        <span>EXPLORA.</span>
+        DOMINA.
+      </h2>
+
+      <p class="gz3-descripcion">
+        Tu nuevo centro de descubrimiento gamer.
+        Explora videojuegos, crea colecciones,
+        participa en batallas y personaliza
+        tu experiencia.
+      </p>
+
+      <a href="#gz3-novedades"
+         class="gz3-boton-principal">
+        Comenzar a explorar ↗
+      </a>
+
+    </div>
+
+    <div class="gz3-version" aria-hidden="true">
+      <span>GAMEZONE</span>
+      <strong>3.0</strong>
+      <small>BLACK & WHITE</small>
+    </div>
+
+  </div>
+
+
+  <!-- ========================================
+       FASE 27 — NOVEDADES DEL CATÁLOGO
+  ======================================== -->
+
+  <section
+    class="gz3-seccion"
+    id="gz3-novedades"
+    aria-labelledby="gz3-novedades-titulo"
+  >
+
+    <div class="gz3-titulo-bloque">
+
+      <div>
+        <p class="eyebrow">
+          / RECIÉN INCORPORADOS
+        </p>
+
+        <h3 id="gz3-novedades-titulo">
+          ÚLTIMAS
+          <span>NOVEDADES.</span>
+        </h3>
+      </div>
+
+      <span class="gz3-etiqueta">
+        CATÁLOGO GAMEZONE
+      </span>
+
+    </div>
+
+    <p class="gz3-texto">
+      Descubre los videojuegos añadidos
+      recientemente a nuestro catálogo.
+    </p>
+
+    <div
+      class="gz3-cuadricula-juegos"
+      id="gz3-lista-novedades"
+      aria-live="polite"
+    >
+      <p class="gz3-vacio">
+        Cargando novedades...
+      </p>
+    </div>
+
+    <button
+      type="button"
+      id="gz3-ver-mas-novedades"
+      class="gz3-boton-secundario"
+    >
+      Mostrar más novedades ↓
+    </button>
+
+  </section>
+
+
+  <!-- ========================================
+       FASE 28 — JUEGOS POPULARES
+  ======================================== -->
+
+  <section
+    class="gz3-seccion"
+    id="gz3-populares"
+    aria-labelledby="gz3-populares-titulo"
+  >
+
+    <div class="gz3-titulo-bloque">
+
+      <div>
+        <p class="eyebrow">
+          / TENDENCIAS PERSONALES
+        </p>
+
+        <h3 id="gz3-populares-titulo">
+          JUEGOS
+          <span>POPULARES.</span>
+        </h3>
+      </div>
+
+      <span class="gz3-etiqueta">
+        TOP GAMEZONE
+      </span>
+
+    </div>
+
+    <p class="gz3-texto">
+      Clasificación basada en tu actividad
+      local, visitas y videojuegos favoritos.
+    </p>
+
+    <div
+      id="gz3-lista-populares"
+      class="gz3-lista-populares"
+      aria-live="polite"
+    >
+      <p class="gz3-vacio">
+        Todavía no hay datos de popularidad.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       FASE 29 — BUSCADOR INTELIGENTE
+  ======================================== -->
+
+  <section
+    class="gz3-seccion"
+    id="gz3-buscador"
+    aria-labelledby="gz3-buscador-titulo"
+  >
+
+    <div class="gz3-titulo-bloque">
+
+      <div>
+        <p class="eyebrow">
+          / ENCUENTRA TU PRÓXIMA AVENTURA
+        </p>
+
+        <h3 id="gz3-buscador-titulo">
+          BÚSQUEDA
+          <span>INTELIGENTE.</span>
+        </h3>
+      </div>
+
+    </div>
+
+    <div class="gz3-busqueda-contenedor">
+
+      <label for="gz3-input-busqueda">
+        Buscar videojuego
+      </label>
+
+      <div class="gz3-busqueda-campo">
+
+        <span aria-hidden="true">⌕</span>
+
+        <input
+          type="search"
+          id="gz3-input-busqueda"
+          placeholder="Escribe el nombre de un videojuego..."
+          autocomplete="off"
+          aria-controls="gz3-sugerencias"
+        />
+
+        <button
+          type="button"
+          id="gz3-limpiar-busqueda"
+          aria-label="Limpiar búsqueda"
+        >
+          ✕
+        </button>
+
+      </div>
+
+      <div
+        id="gz3-sugerencias"
+        class="gz3-sugerencias"
+        role="region"
+        aria-label="Sugerencias de videojuegos"
+        aria-live="polite"
+      ></div>
+
+    </div>
+
+    <p
+      id="gz3-busqueda-estado"
+      class="gz3-texto"
+      role="status"
+    >
+      Empieza a escribir para buscar videojuegos.
+    </p>
+
+  </section>
+
+
+  <!-- ========================================
+       FASE 30 — COLECCIONES PERSONALIZADAS
+  ======================================== -->
+
+  <section
+    class="gz3-seccion"
+    id="gz3-colecciones"
+    aria-labelledby="gz3-colecciones-titulo"
+  >
+
+    <div class="gz3-titulo-bloque">
+
+      <div>
+        <p class="eyebrow">
+          / ORGANIZA TU UNIVERSO
+        </p>
+
+        <h3 id="gz3-colecciones-titulo">
+          MIS
+          <span>COLECCIONES.</span>
+        </h3>
+      </div>
+
+      <span class="gz3-etiqueta">
+        LISTAS PERSONALIZADAS
+      </span>
+
+    </div>
+
+    <div class="gz3-formulario">
+
+      <label for="gz3-nombre-coleccion">
+        Nombre de la colección
+      </label>
+
+      <input
+        type="text"
+        id="gz3-nombre-coleccion"
+        maxlength="40"
+        placeholder="Ejemplo: Mis mejores RPG"
+      />
+
+      <button
+        type="button"
+        id="gz3-crear-coleccion"
+        class="gz3-boton-principal"
+      >
+        + Crear colección
+      </button>
+
+    </div>
+
+    <div class="gz3-formulario gz3-formulario-secundario">
+
+      <label for="gz3-seleccionar-coleccion">
+        Selecciona una colección
+      </label>
+
+      <select id="gz3-seleccionar-coleccion">
+        <option value="">
+          Seleccionar colección
+        </option>
+      </select>
+
+      <label for="gz3-juego-coleccion">
+        Videojuego que deseas añadir
+      </label>
+
+      <select id="gz3-juego-coleccion">
+        <option value="">
+          Seleccionar videojuego
+        </option>
+      </select>
+
+      <button
+        type="button"
+        id="gz3-agregar-coleccion"
+        class="gz3-boton-principal"
+      >
+        + Añadir videojuego
+      </button>
+
+    </div>
+
+    <div
+      id="gz3-lista-colecciones"
+      class="gz3-lista-colecciones"
+      aria-live="polite"
+    >
+      <p class="gz3-vacio">
+        Todavía no has creado colecciones.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       FASE 31 — ETIQUETAS PERSONALIZADAS
+  ======================================== -->
+
+  <section
+    class="gz3-seccion"
+    id="gz3-etiquetas"
+    aria-labelledby="gz3-etiquetas-titulo"
+  >
+
+    <div class="gz3-titulo-bloque">
+
+      <div>
+        <p class="eyebrow">
+          / CLASIFICA A TU MANERA
+        </p>
+
+        <h3 id="gz3-etiquetas-titulo">
+          ETIQUETAS
+          <span>GAMER.</span>
+        </h3>
+      </div>
+
+    </div>
+
+    <div class="gz3-formulario">
+
+      <label for="gz3-juego-etiqueta">
+        Selecciona un videojuego
+      </label>
+
+      <select id="gz3-juego-etiqueta">
+        <option value="">
+          Seleccionar videojuego
+        </option>
+      </select>
+
+      <label for="gz3-nueva-etiqueta">
+        Nombre de la etiqueta
+      </label>
+
+      <input
+        type="text"
+        id="gz3-nueva-etiqueta"
+        maxlength="25"
+        placeholder="Ejemplo: Mundo abierto"
+      />
+
+      <button
+        type="button"
+        id="gz3-guardar-etiqueta"
+        class="gz3-boton-principal"
+      >
+        # Guardar etiqueta
+      </button>
+
+    </div>
+
+    <div class="gz3-subtitulo">
+      <h4>MIS ETIQUETAS</h4>
+      <span id="gz3-contador-etiquetas">
+        0 etiquetas
+      </span>
+    </div>
+
+    <div
+      id="gz3-lista-etiquetas"
+      class="gz3-lista-etiquetas"
+      aria-live="polite"
+    >
+      <p class="gz3-vacio">
+        Tus etiquetas aparecerán aquí.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       FASE 32 — RULETA GAMER
+  ======================================== -->
+
+  <section
+    class="gz3-seccion"
+    id="gz3-ruleta"
+    aria-labelledby="gz3-ruleta-titulo"
+  >
+
+    <div class="gz3-titulo-bloque">
+
+      <div>
+        <p class="eyebrow">
+          / DEJA QUE EL AZAR DECIDA
+        </p>
+
+        <h3 id="gz3-ruleta-titulo">
+          RULETA
+          <span>GAMER.</span>
+        </h3>
+      </div>
+
+    </div>
+
+    <p class="gz3-texto">
+      ¿No sabes qué videojuego explorar?
+      Deja que GameZone elija uno por ti.
+    </p>
+
+    <div class="gz3-ruleta-contenedor">
+
+      <div
+        class="gz3-ruleta-visual"
+        id="gz3-ruleta-visual"
+        aria-hidden="true"
+      >
+        <span>GZ</span>
+        <strong>?</strong>
+      </div>
+
+      <div class="gz3-ruleta-controles">
+
+        <label for="gz3-ruleta-genero">
+          Categoría de la ruleta
+        </label>
+
+        <select id="gz3-ruleta-genero">
+          <option value="todos">
+            Todos los géneros
+          </option>
+        </select>
+
+        <button
+          type="button"
+          id="gz3-girar-ruleta"
+          class="gz3-boton-principal"
+        >
+          🎲 Girar ruleta
+        </button>
+
+      </div>
+
+      <div
+        class="gz3-ruleta-resultado"
+        id="gz3-ruleta-resultado"
+        role="status"
+        aria-live="polite"
+      >
+        <h4>¿CUÁL SERÁ TU PRÓXIMO JUEGO?</h4>
+
+        <p>
+          Presiona el botón para descubrirlo.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       FASE 33 — BATALLA DE VIDEOJUEGOS
+  ======================================== -->
+
+  <section
+    class="gz3-seccion"
+    id="gz3-batallas"
+    aria-labelledby="gz3-batallas-titulo"
+  >
+
+    <div class="gz3-titulo-bloque">
+
+      <div>
+        <p class="eyebrow">
+          / ENFRENTAMIENTO GAMER
+        </p>
+
+        <h3 id="gz3-batallas-titulo">
+          BATALLA DE
+          <span>VIDEOJUEGOS.</span>
+        </h3>
+      </div>
+
+      <span class="gz3-etiqueta">
+        VS MODE
+      </span>
+
+    </div>
+
+    <p class="gz3-texto">
+      Dos videojuegos se enfrentan.
+      Tú decides cuál es tu favorito.
+    </p>
+
+    <div class="gz3-batalla-arena">
+
+      <article class="gz3-batalla-juego">
+
+        <span class="gz3-batalla-numero">
+          JUGADOR 01
+        </span>
+
+        <div
+          class="gz3-batalla-portada"
+          id="gz3-batalla-portada-1"
+        >
+          GZ
+        </div>
+
+        <h4 id="gz3-batalla-nombre-1">
+          Videojuego 1
+        </h4>
+
+        <button
+          type="button"
+          id="gz3-votar-1"
+          class="gz3-boton-principal"
+          disabled
+        >
+          Elegir ganador
+        </button>
+
+      </article>
+
+      <div class="gz3-versus" aria-hidden="true">
+        VS
+      </div>
+
+      <article class="gz3-batalla-juego">
+
+        <span class="gz3-batalla-numero">
+          JUGADOR 02
+        </span>
+
+        <div
+          class="gz3-batalla-portada"
+          id="gz3-batalla-portada-2"
+        >
+          GZ
+        </div>
+
+        <h4 id="gz3-batalla-nombre-2">
+          Videojuego 2
+        </h4>
+
+        <button
+          type="button"
+          id="gz3-votar-2"
+          class="gz3-boton-principal"
+          disabled
+        >
+          Elegir ganador
+        </button>
+
+      </article>
+
+    </div>
+
+    <div class="gz3-batalla-controles">
+
+      <button
+        type="button"
+        id="gz3-nueva-batalla"
+        class="gz3-boton-secundario"
+      >
+        ⚔ Generar nueva batalla
+      </button>
+
+      <button
+        type="button"
+        id="gz3-reiniciar-batallas"
+        class="gz3-boton-secundario"
+      >
+        Reiniciar resultados
+      </button>
+
+    </div>
+
+    <p
+      id="gz3-batalla-resultado"
+      class="gz3-texto"
+      role="status"
+      aria-live="polite"
+    >
+      Genera una batalla para comenzar.
+    </p>
+
+    <div class="gz3-subtitulo">
+      <h4>HISTORIAL DE GANADORES</h4>
+    </div>
+
+    <div
+      id="gz3-ranking-batallas"
+      class="gz3-ranking-batallas"
+      aria-live="polite"
+    >
+      <p class="gz3-vacio">
+        Todavía no hay ganadores.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       FASE 34 — ESTADÍSTICAS VISUALES
+  ======================================== -->
+
+  <section
+    class="gz3-seccion"
+    id="gz3-graficos"
+    aria-labelledby="gz3-graficos-titulo"
+  >
+
+    <div class="gz3-titulo-bloque">
+
+      <div>
+        <p class="eyebrow">
+          / TU UNIVERSO EN NÚMEROS
+        </p>
+
+        <h3 id="gz3-graficos-titulo">
+          ESTADÍSTICAS
+          <span>VISUALES.</span>
+        </h3>
+      </div>
+
+    </div>
+
+    <div class="gz3-graficos-cuadricula">
+
+      <article class="gz3-grafico-panel">
+
+        <h4>
+          MIS GÉNEROS FAVORITOS
+        </h4>
+
+        <div
+          id="gz3-grafico-generos"
+          class="gz3-grafico"
+          role="img"
+          aria-label="Gráfico de géneros favoritos"
+        >
+          <p class="gz3-vacio">
+            Sin datos todavía.
+          </p>
+        </div>
+
+      </article>
+
+      <article class="gz3-grafico-panel">
+
+        <h4>
+          ESTADO DE MIS JUEGOS
+        </h4>
+
+        <div
+          id="gz3-grafico-estados"
+          class="gz3-grafico"
+          role="img"
+          aria-label="Gráfico de estados de videojuegos"
+        >
+          <p class="gz3-vacio">
+            Sin datos todavía.
+          </p>
+        </div>
+
+      </article>
+
+      <article class="gz3-grafico-panel">
+
+        <h4>
+          MIS VALORACIONES
+        </h4>
+
+        <div
+          id="gz3-grafico-valoraciones"
+          class="gz3-grafico"
+          role="img"
+          aria-label="Gráfico de valoraciones personales"
+        >
+          <p class="gz3-vacio">
+            Sin datos todavía.
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       FASE 35 — CENTRO DE AJUSTES
+  ======================================== -->
+
+  <section
+    class="gz3-seccion"
+    id="gz3-ajustes"
+    aria-labelledby="gz3-ajustes-titulo"
+  >
+
+    <div class="gz3-titulo-bloque">
+
+      <div>
+        <p class="eyebrow">
+          / PERSONALIZA TU EXPERIENCIA
+        </p>
+
+        <h3 id="gz3-ajustes-titulo">
+          CENTRO DE
+          <span>AJUSTES.</span>
+        </h3>
+      </div>
+
+    </div>
+
+    <div class="gz3-ajustes-lista">
+
+      <div class="gz3-ajuste">
+
+        <div>
+          <h4>Animaciones</h4>
+
+          <p>
+            Activar o reducir los efectos
+            visuales de GameZone.
+          </p>
+        </div>
+
+        <label class="gz3-switch">
+          <input
+            type="checkbox"
+            id="gz3-ajuste-animaciones"
+            checked
+          />
+
+          <span>Activar animaciones</span>
+        </label>
+
+      </div>
+
+      <div class="gz3-ajuste">
+
+        <div>
+          <h4>Modo compacto</h4>
+
+          <p>
+            Mostrar las tarjetas y secciones
+            con menos espacio.
+          </p>
+        </div>
+
+        <label class="gz3-switch">
+          <input
+            type="checkbox"
+            id="gz3-ajuste-compacto"
+          />
+
+          <span>Activar modo compacto</span>
+        </label>
+
+      </div>
+
+      <div class="gz3-ajuste">
+
+        <div>
+          <h4>Confirmaciones</h4>
+
+          <p>
+            Solicitar confirmación antes
+            de eliminar información.
+          </p>
+        </div>
+
+        <label class="gz3-switch">
+          <input
+            type="checkbox"
+            id="gz3-ajuste-confirmaciones"
+            checked
+          />
+
+          <span>Solicitar confirmación</span>
+        </label>
+
+      </div>
+
+    </div>
+
+    <button
+      type="button"
+      id="gz3-guardar-ajustes"
+      class="gz3-boton-principal"
+    >
+      Guardar preferencias
+    </button>
+
+  </section>
+
+
+  <!-- ========================================
+       FASE 36 — EXPERIENCIA Y ACCESIBILIDAD
+  ======================================== -->
+
+  <section
+    class="gz3-final"
+    id="gz3-experiencia"
+    aria-labelledby="gz3-final-titulo"
+  >
+
+    <div>
+
+      <p class="eyebrow">
+        / GAMEZONE — NUEVA GENERACIÓN
+      </p>
+
+      <h3 id="gz3-final-titulo">
+        TU UNIVERSO.
+        <span>TUS REGLAS.</span>
+      </h3>
+
+      <p>
+        Cada videojuego tiene una historia.
+        Crea colecciones, explora novedades
+        y descubre tu próxima aventura.
+      </p>
+
+    </div>
+
+    <a
+      href="#catalogo"
+      class="gz3-boton-principal"
+    >
+      Volver al catálogo ↗
+    </a>
+
+  </section>
+
+</section>
+
+<!-- ==========================================
+     FIN — GAMEZONE 3.0
+     FASES 27 A 36
+========================================== -->
+
+<!-- ================================================
+     GAMEZONE 4.0 — BLACK & WHITE ULTIMATE
+     FASES 37 A 46
+     CENTRO GAMER AVANZADO
+================================================ -->
+
+<section
+    id="gamezone-4"
+    class="gz4-centro contenedor"
+    aria-labelledby="gz4-titulo"
+>
+
+    <!-- ============================================
+         ENCABEZADO PRINCIPAL GAMEZONE 4.0
+    ============================================ -->
+
+    <div class="gz4-hero">
+
+        <div class="gz4-hero-contenido">
+
+            <p class="gz4-eyebrow">
+                / GAMEZONE 4.0 — ULTIMATE EDITION
+            </p>
+
+            <h2 id="gz4-titulo">
+                EL SIGUIENTE
+                <span>NIVEL GAMER.</span>
+            </h2>
+
+            <p class="gz4-descripcion">
+                Explora noticias, descubre próximos
+                lanzamientos, completa desafíos,
+                desbloquea insignias y lleva tu
+                experiencia gamer al siguiente nivel.
+            </p>
+
+            <div class="gz4-hero-acciones">
+
+                <a
+                    href="#gz4-dashboard"
+                    class="gz4-boton-principal"
+                >
+                    Explorar mi dashboard ↗
+                </a>
+
+                <a
+                    href="#gz4-desafios"
+                    class="gz4-boton-secundario"
+                >
+                    Ver desafíos
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="gz4-hero-version" aria-hidden="true">
+
+            <span>GAMEZONE</span>
+
+            <strong>4.0</strong>
+
+            <small>ULTIMATE EDITION</small>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================================
+         FASE 37 — PANEL DE NOTICIAS GAMER
+    ============================================ -->
+
+    <section
+        id="gz4-noticias"
+        class="gz4-seccion"
+        aria-labelledby="gz4-noticias-titulo"
+    >
+
+        <div class="gz4-encabezado-seccion">
+
+            <div>
+
+                <p class="gz4-eyebrow">
+                    / FASE 37 — INFORMACIÓN GAMER
+                </p>
+
+                <h3 id="gz4-noticias-titulo">
+                    NOTICIAS
+                    <span>GAMER.</span>
+                </h3>
+
+            </div>
+
+            <span class="gz4-etiqueta">
+                GAMEZONE NEWS
+            </span>
+
+        </div>
+
+        <p class="gz4-texto">
+            Organiza anuncios, novedades y noticias
+            de tus videojuegos favoritos.
+        </p>
+
+        <div class="gz4-formulario">
+
+            <h4>PUBLICAR NOTICIA</h4>
+
+            <label for="gz4-noticia-titulo">
+                Título de la noticia
+            </label>
+
+            <input
+                type="text"
+                id="gz4-noticia-titulo"
+                maxlength="100"
+                placeholder="Ejemplo: Nuevo lanzamiento anunciado"
+            >
+
+            <label for="gz4-noticia-categoria">
+                Categoría
+            </label>
+
+            <select id="gz4-noticia-categoria">
+
+                <option value="Novedades">
+                    Novedades
+                </option>
+
+                <option value="Lanzamientos">
+                    Lanzamientos
+                </option>
+
+                <option value="Actualizaciones">
+                    Actualizaciones
+                </option>
+
+                <option value="Eventos">
+                    Eventos
+                </option>
+
+                <option value="Otros">
+                    Otros
+                </option>
+
+            </select>
+
+            <label for="gz4-noticia-descripcion">
+                Descripción
+            </label>
+
+            <textarea
+                id="gz4-noticia-descripcion"
+                rows="4"
+                maxlength="1000"
+                placeholder="Escribe el contenido de la noticia..."
+            ></textarea>
+
+            <label for="gz4-noticia-enlace">
+                Enlace de referencia (opcional)
+            </label>
+
+            <input
+                type="url"
+                id="gz4-noticia-enlace"
+                placeholder="https://ejemplo.com/noticia"
+            >
+
+            <button
+                type="button"
+                id="gz4-publicar-noticia"
+                class="gz4-boton-principal"
+            >
+                + Publicar noticia
+            </button>
+
+        </div>
+
+        <div class="gz4-subtitulo">
+
+            <h4>ÚLTIMAS PUBLICACIONES</h4>
+
+            <span id="gz4-contador-noticias">
+                0 noticias
+            </span>
+
+        </div>
+
+        <div
+            id="gz4-lista-noticias"
+            class="gz4-cuadricula-noticias"
+            aria-live="polite"
+        >
+
+            <p class="gz4-vacio">
+                Todavía no hay noticias publicadas.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================================
+         FASE 38 — CALENDARIO DE LANZAMIENTOS
+    ============================================ -->
+
+    <section
+        id="gz4-lanzamientos"
+        class="gz4-seccion"
+        aria-labelledby="gz4-lanzamientos-titulo"
+    >
+
+        <div class="gz4-encabezado-seccion">
+
+            <div>
+
+                <p class="gz4-eyebrow">
+                    / FASE 38 — PRÓXIMAMENTE
+                </p>
+
+                <h3 id="gz4-lanzamientos-titulo">
+                    PRÓXIMOS
+                    <span>LANZAMIENTOS.</span>
+                </h3>
+
+            </div>
+
+            <span class="gz4-etiqueta">
+                RELEASE CALENDAR
+            </span>
+
+        </div>
+
+        <p class="gz4-texto">
+            Registra próximos videojuegos y consulta
+            cuánto falta para sus lanzamientos.
+        </p>
+
+        <div class="gz4-formulario">
+
+            <h4>AÑADIR LANZAMIENTO</h4>
+
+            <label for="gz4-lanzamiento-nombre">
+                Nombre del videojuego
+            </label>
+
+            <input
+                type="text"
+                id="gz4-lanzamiento-nombre"
+                maxlength="80"
+                placeholder="Nombre del próximo videojuego"
+            >
+
+            <label for="gz4-lanzamiento-fecha">
+                Fecha de lanzamiento
+            </label>
+
+            <input
+                type="date"
+                id="gz4-lanzamiento-fecha"
+            >
+
+            <label for="gz4-lanzamiento-plataforma">
+                Plataforma
+            </label>
+
+            <select id="gz4-lanzamiento-plataforma">
+
+                <option value="PC">PC</option>
+                <option value="PlayStation">PlayStation</option>
+                <option value="Xbox">Xbox</option>
+                <option value="Nintendo">Nintendo</option>
+                <option value="Android">Android</option>
+                <option value="iOS">iOS</option>
+                <option value="Multiplataforma">
+                    Multiplataforma
+                </option>
+
+            </select>
+
+            <button
+                type="button"
+                id="gz4-agregar-lanzamiento"
+                class="gz4-boton-principal"
+            >
+                + Añadir lanzamiento
+            </button>
+
+        </div>
+
+        <div class="gz4-filtros">
+
+            <button
+                type="button"
+                class="gz4-filtro gz4-activo"
+                data-gz4-lanzamiento="proximos"
+            >
+                Próximos
+            </button>
+
+            <button
+                type="button"
+                class="gz4-filtro"
+                data-gz4-lanzamiento="todos"
+            >
+                Todos
+            </button>
+
+            <button
+                type="button"
+                class="gz4-filtro"
+                data-gz4-lanzamiento="pasados"
+            >
+                Pasados
+            </button>
+
+        </div>
+
+        <div
+            id="gz4-lista-lanzamientos"
+            class="gz4-lista-lanzamientos"
+            aria-live="polite"
+        >
+
+            <p class="gz4-vacio">
+                Todavía no hay lanzamientos registrados.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================================
+         FASE 39 — LISTA DE DESEOS AVANZADA
+    ============================================ -->
+
+    <section
+        id="gz4-deseos"
+        class="gz4-seccion"
+        aria-labelledby="gz4-deseos-titulo"
+    >
+
+        <div class="gz4-encabezado-seccion">
+
+            <div>
+
+                <p class="gz4-eyebrow">
+                    / FASE 39 — WISHLIST
+                </p>
+
+                <h3 id="gz4-deseos-titulo">
+                    MI LISTA
+                    <span>DE DESEOS.</span>
+                </h3>
+
+            </div>
+
+            <span class="gz4-etiqueta">
+                MIS OBJETIVOS
+            </span>
+
+        </div>
+
+        <p class="gz4-texto">
+            Guarda videojuegos que quieres
+            conseguir, probar o jugar en el futuro.
+        </p>
+
+        <div class="gz4-formulario">
+
+            <label for="gz4-deseo-juego">
+                Selecciona un videojuego
+            </label>
+
+            <select id="gz4-deseo-juego">
+
+                <option value="">
+                    Seleccionar videojuego
+                </option>
+
+            </select>
+
+            <label for="gz4-deseo-prioridad">
+                Prioridad
+            </label>
+
+            <select id="gz4-deseo-prioridad">
+
+                <option value="alta">
+                    Alta
+                </option>
+
+                <option value="media" selected>
+                    Media
+                </option>
+
+                <option value="baja">
+                    Baja
+                </option>
+
+            </select>
+
+            <label for="gz4-deseo-nota">
+                Nota personal (opcional)
+            </label>
+
+            <textarea
+                id="gz4-deseo-nota"
+                rows="3"
+                maxlength="300"
+                placeholder="¿Por qué quieres jugarlo?"
+            ></textarea>
+
+            <button
+                type="button"
+                id="gz4-agregar-deseo"
+                class="gz4-boton-principal"
+            >
+                ♡ Añadir a deseos
+            </button>
+
+        </div>
+
+        <div class="gz4-estadisticas">
+
+            <div class="gz4-stat">
+
+                <span>TOTAL DE DESEOS</span>
+
+                <strong id="gz4-total-deseos">
+                    0
+                </strong>
+
+            </div>
+
+            <div class="gz4-stat">
+
+                <span>PRIORIDAD ALTA</span>
+
+                <strong id="gz4-deseos-alta">
+                    0
+                </strong>
+
+            </div>
+
+            <div class="gz4-stat">
+
+                <span>PRIORIDAD MEDIA</span>
+
+                <strong id="gz4-deseos-media">
+                    0
+                </strong>
+
+            </div>
+
+            <div class="gz4-stat">
+
+                <span>PRIORIDAD BAJA</span>
+
+                <strong id="gz4-deseos-baja">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+        <div class="gz4-filtros">
+
+            <button
+                type="button"
+                class="gz4-filtro gz4-activo"
+                data-gz4-deseo="todos"
+            >
+                Todos
+            </button>
+
+            <button
+                type="button"
+                class="gz4-filtro"
+                data-gz4-deseo="alta"
+            >
+                Alta
+            </button>
+
+            <button
+                type="button"
+                class="gz4-filtro"
+                data-gz4-deseo="media"
+            >
+                Media
+            </button>
+
+            <button
+                type="button"
+                class="gz4-filtro"
+                data-gz4-deseo="baja"
+            >
+                Baja
+            </button>
+
+        </div>
+
+        <div
+            id="gz4-lista-deseos"
+            class="gz4-lista-deseos"
+            aria-live="polite"
+        >
+
+            <p class="gz4-vacio">
+                Tu lista de deseos está vacía.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================================
+         FASE 40 — SISTEMA DE DESAFÍOS
+    ============================================ -->
+
+    <section
+        id="gz4-desafios"
+        class="gz4-seccion"
+        aria-labelledby="gz4-desafios-titulo"
+    >
+
+        <div class="gz4-encabezado-seccion">
+
+            <div>
+
+                <p class="gz4-eyebrow">
+                    / FASE 40 — MISIONES GAMER
+                </p>
+
+                <h3 id="gz4-desafios-titulo">
+                    DESAFÍOS
+                    <span>GAMEZONE.</span>
+                </h3>
+
+            </div>
+
+            <span class="gz4-etiqueta">
+                CHALLENGE MODE
+            </span>
+
+        </div>
+
+        <p class="gz4-texto">
+            Completa misiones relacionadas con
+            tu actividad y gana experiencia.
+        </p>
+
+        <div class="gz4-progreso-general">
+
+            <div class="gz4-progreso-info">
+
+                <span>PROGRESO DE DESAFÍOS</span>
+
+                <strong id="gz4-desafios-progreso">
+                    0 / 0
+                </strong>
+
+            </div>
+
+            <div class="gz4-barra">
+
+                <div
+                    id="gz4-barra-desafios"
+                    class="gz4-barra-relleno"
+                    style="width: 0%"
+                ></div>
+
+            </div>
+
+        </div>
+
+        <div
+            id="gz4-lista-desafios"
+            class="gz4-cuadricula-desafios"
+            aria-live="polite"
+        >
+
+            <p class="gz4-vacio">
+                Preparando tus desafíos...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================================
+         FASE 41 — PERFIL GAMER AVANZADO
+    ============================================ -->
+
+    <section
+        id="gz4-perfil"
+        class="gz4-seccion"
+        aria-labelledby="gz4-perfil-titulo"
+    >
+
+        <div class="gz4-encabezado-seccion">
+
+            <div>
+
+                <p class="gz4-eyebrow">
+                    / FASE 41 — PLAYER PROFILE
+                </p>
+
+                <h3 id="gz4-perfil-titulo">
+                    PERFIL GAMER
+                    <span>AVANZADO.</span>
+                </h3>
+
+            </div>
+
+        </div>
+
+        <div class="gz4-perfil-tarjeta">
+
+            <div class="gz4-perfil-superior">
+
+                <div
+                    id="gz4-avatar"
+                    class="gz4-avatar"
+                    aria-label="Avatar del jugador"
+                >
+                    G
+                </div>
+
+                <div class="gz4-perfil-identidad">
+
+                    <span class="gz4-eyebrow">
+                        GAMEZONE PLAYER
+                    </span>
+
+                    <h4 id="gz4-nombre-jugador">
+                        Jugador
+                    </h4>
+
+                    <p id="gz4-rango-jugador">
+                        Explorador principiante
+                    </p>
+
+                </div>
+
+                <div class="gz4-nivel">
+
+                    <span>NIVEL</span>
+
+                    <strong id="gz4-nivel-actual">
+                        1
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <div class="gz4-experiencia">
+
+                <div class="gz4-progreso-info">
+
+                    <span>EXPERIENCIA</span>
+
+                    <strong id="gz4-experiencia-texto">
+                        0 / 100 XP
+                    </strong>
+
+                </div>
+
+                <div class="gz4-barra">
+
+                    <div
+                        id="gz4-barra-experiencia"
+                        class="gz4-barra-relleno"
+                        style="width: 0%"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="gz4-estadisticas">
+
+            <div class="gz4-stat">
+
+                <span>FAVORITOS</span>
+
+                <strong id="gz4-perfil-favoritos">
+                    0
+                </strong>
+
+            </div>
+
+            <div class="gz4-stat">
+
+                <span>RESEÑAS</span>
+
+                <strong id="gz4-perfil-resenas">
+                    0
+                </strong>
+
+            </div>
+
+            <div class="gz4-stat">
+
+                <span>COLECCIONES</span>
+
+                <strong id="gz4-perfil-colecciones">
+                    0
+                </strong>
+
+            </div>
+
+            <div class="gz4-stat">
+
+                <span>DESAFÍOS</span>
+
+                <strong id="gz4-perfil-desafios">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================================
+         FASE 42 — INSIGNIAS Y RECOMPENSAS
+    ============================================ -->
+
+    <section
+        id="gz4-insignias"
+        class="gz4-seccion"
+        aria-labelledby="gz4-insignias-titulo"
+    >
+
+        <div class="gz4-encabezado-seccion">
+
+            <div>
+
+                <p class="gz4-eyebrow">
+                    / FASE 42 — ACHIEVEMENTS
+                </p>
+
+                <h3 id="gz4-insignias-titulo">
+                    INSIGNIAS Y
+                    <span>RECOMPENSAS.</span>
+                </h3>
+
+            </div>
+
+            <span class="gz4-etiqueta">
+                TROPHY ROOM
+            </span>
+
+        </div>
+
+        <p class="gz4-texto">
+            Desbloquea insignias por tus logros
+            y actividades dentro de GameZone.
+        </p>
+
+        <div class="gz4-progreso-general">
+
+            <div class="gz4-progreso-info">
+
+                <span>INSIGNIAS DESBLOQUEADAS</span>
+
+                <strong id="gz4-insignias-contador">
+                    0 / 0
+                </strong>
+
+            </div>
+
+            <div class="gz4-barra">
+
+                <div
+                    id="gz4-barra-insignias"
+                    class="gz4-barra-relleno"
+                    style="width: 0%"
+                ></div>
+
+            </div>
+
+        </div>
+
+        <div
+            id="gz4-lista-insignias"
+            class="gz4-cuadricula-insignias"
+            aria-live="polite"
+        >
+
+            <p class="gz4-vacio">
+                Preparando sala de trofeos...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================================
+         FASE 43 — RECOMENDACIONES AVANZADAS
+    ============================================ -->
+
+    <section
+        id="gz4-recomendaciones"
+        class="gz4-seccion"
+        aria-labelledby="gz4-recomendaciones-titulo"
+    >
+
+        <div class="gz4-encabezado-seccion">
+
+            <div>
+
+                <p class="gz4-eyebrow">
+                    / FASE 43 — SMART DISCOVERY
+                </p>
+
+                <h3 id="gz4-recomendaciones-titulo">
+                    RECOMENDACIONES
+                    <span>AVANZADAS.</span>
+                </h3>
+
+            </div>
+
+            <span class="gz4-etiqueta">
+                PARA TI
+            </span>
+
+        </div>
+
+        <p class="gz4-texto">
+            Descubre videojuegos que podrían
+            interesarte según tus favoritos,
+            géneros y valoraciones.
+        </p>
+
+        <div class="gz4-recomendaciones-controles">
+
+            <label for="gz4-recomendacion-genero">
+                Género preferido
+            </label>
+
+            <select id="gz4-recomendacion-genero">
+
+                <option value="automatico">
+                    Recomendación automática
+                </option>
+
+            </select>
+
+            <button
+                type="button"
+                id="gz4-generar-recomendaciones"
+                class="gz4-boton-principal"
+            >
+                ✦ Generar recomendaciones
+            </button>
+
+        </div>
+
+        <p
+            id="gz4-recomendaciones-explicacion"
+            class="gz4-texto"
+            role="status"
+        >
+            Las recomendaciones aparecerán aquí.
+        </p>
+
+        <div
+            id="gz4-lista-recomendaciones"
+            class="gz4-cuadricula-juegos"
+            aria-live="polite"
+        >
+
+            <p class="gz4-vacio">
+                Genera recomendaciones para comenzar.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================================
+         FASE 44 — COMPARADOR DEFINITIVO
+    ============================================ -->
+
+    <section
+        id="gz4-comparador"
+        class="gz4-seccion"
+        aria-labelledby="gz4-comparador-titulo"
+    >
+
+        <div class="gz4-encabezado-seccion">
+
+            <div>
+
+                <p class="gz4-eyebrow">
+                    / FASE 44 — GAME VS GAME
+                </p>
+
+                <h3 id="gz4-comparador-titulo">
+                    COMPARADOR
+                    <span>DEFINITIVO.</span>
+                </h3>
+
+            </div>
+
+            <span class="gz4-etiqueta">
+                COMPARISON MODE
+            </span>
+
+        </div>
+
+        <p class="gz4-texto">
+            Selecciona dos videojuegos para
+            comparar sus características.
+        </p>
+
+        <div class="gz4-comparador-selectores">
+
+            <div>
+
+                <label for="gz4-comparador-juego-1">
+                    Videojuego número 1
+                </label>
+
+                <select id="gz4-comparador-juego-1">
+
+                    <option value="">
+                        Seleccionar videojuego
+                    </option>
+
+                </select>
+
+            </div>
+
+            <span class="gz4-versus" aria-hidden="true">
+                VS
+            </span>
+
+            <div>
+
+                <label for="gz4-comparador-juego-2">
+                    Videojuego número 2
+                </label>
+
+                <select id="gz4-comparador-juego-2">
+
+                    <option value="">
+                        Seleccionar videojuego
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <button
+            type="button"
+            id="gz4-comparar-juegos"
+            class="gz4-boton-principal"
+        >
+            Comparar videojuegos
+        </button>
+
+        <div
+            id="gz4-comparador-resultado"
+            class="gz4-comparador-resultado"
+            aria-live="polite"
+        >
+
+            <p class="gz4-vacio">
+                Selecciona dos videojuegos para compararlos.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================================
+         FASE 45 — CENTRO DE NOTIFICACIONES
+    ============================================ -->
+
+    <section
+        id="gz4-notificaciones"
+        class="gz4-seccion"
+        aria-labelledby="gz4-notificaciones-titulo"
+    >
+
+        <div class="gz4-encabezado-seccion">
+
+            <div>
+
+                <p class="gz4-eyebrow">
+                    / FASE 45 — ACTIVITY CENTER
+                </p>
+
+                <h3 id="gz4-notificaciones-titulo">
+                    CENTRO DE
+                    <span>NOTIFICACIONES.</span>
+                </h3>
+
+            </div>
+
+            <span
+                id="gz4-notificaciones-contador"
+                class="gz4-etiqueta"
+                role="status"
+            >
+                0 SIN LEER
+            </span>
+
+        </div>
+
+        <div class="gz4-notificaciones-acciones">
+
+            <button
+                type="button"
+                id="gz4-marcar-leidas"
+                class="gz4-boton-secundario"
+            >
+                Marcar todas como leídas
+            </button>
+
+            <button
+                type="button"
+                id="gz4-limpiar-notificaciones"
+                class="gz4-boton-secundario"
+            >
+                Limpiar notificaciones
+            </button>
+
+        </div>
+
+        <div
+            id="gz4-lista-notificaciones"
+            class="gz4-lista-notificaciones"
+            aria-live="polite"
+        >
+
+            <p class="gz4-vacio">
+                No tienes notificaciones.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================================
+         FASE 46 — DASHBOARD GAMEZONE 4.0
+    ============================================ -->
+
+    <section
+        id="gz4-dashboard"
+        class="gz4-seccion gz4-dashboard"
+        aria-labelledby="gz4-dashboard-titulo"
+    >
+
+        <div class="gz4-encabezado-seccion">
+
+            <div>
+
+                <p class="gz4-eyebrow">
+                    / FASE 46 — CONTROL CENTER
+                </p>
+
+                <h3 id="gz4-dashboard-titulo">
+                    DASHBOARD
+                    <span>GAMEZONE.</span>
+                </h3>
+
+            </div>
+
+            <span class="gz4-etiqueta">
+                ULTIMATE PANEL
+            </span>
+
+        </div>
+
+        <p class="gz4-texto">
+            Toda tu actividad gamer reunida
+            en un solo lugar.
+        </p>
+
+        <div class="gz4-estadisticas gz4-dashboard-stats">
+
+            <div class="gz4-stat">
+
+                <span>VIDEOJUEGOS</span>
+
+                <strong id="gz4-dashboard-juegos">
+                    0
+                </strong>
+
+            </div>
+
+            <div class="gz4-stat">
+
+                <span>FAVORITOS</span>
+
+                <strong id="gz4-dashboard-favoritos">
+                    0
+                </strong>
+
+            </div>
+
+            <div class="gz4-stat">
+
+                <span>DESEOS</span>
+
+                <strong id="gz4-dashboard-deseos">
+                    0
+                </strong>
+
+            </div>
+
+            <div class="gz4-stat">
+
+                <span>INSIGNIAS</span>
+
+                <strong id="gz4-dashboard-insignias">
+                    0
+                </strong>
+
+            </div>
+
+            <div class="gz4-stat">
+
+                <span>DESAFÍOS</span>
+
+                <strong id="gz4-dashboard-desafios">
+                    0
+                </strong>
+
+            </div>
+
+            <div class="gz4-stat">
+
+                <span>NIVEL GAMER</span>
+
+                <strong id="gz4-dashboard-nivel">
+                    1
+                </strong>
+
+            </div>
+
+        </div>
+
+        <div class="gz4-dashboard-paneles">
+
+            <article class="gz4-dashboard-panel">
+
+                <h4>ACTIVIDAD RECIENTE</h4>
+
+                <div
+                    id="gz4-dashboard-actividad"
+                    class="gz4-dashboard-actividad"
+                >
+
+                    <p class="gz4-vacio">
+                        No hay actividad reciente.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="gz4-dashboard-panel">
+
+                <h4>PRÓXIMOS LANZAMIENTOS</h4>
+
+                <div
+                    id="gz4-dashboard-lanzamientos"
+                    class="gz4-dashboard-lanzamientos"
+                >
+
+                    <p class="gz4-vacio">
+                        No hay lanzamientos próximos.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="gz4-dashboard-accesos">
+
+            <a href="#gz4-noticias">
+                Noticias ↗
+            </a>
+
+            <a href="#gz4-lanzamientos">
+                Lanzamientos ↗
+            </a>
+
+            <a href="#gz4-deseos">
+                Lista de deseos ↗
+            </a>
+
+            <a href="#gz4-desafios">
+                Desafíos ↗
+            </a>
+
+            <a href="#gz4-perfil">
+                Mi perfil ↗
+            </a>
+
+            <a href="#gz4-insignias">
+                Insignias ↗
+            </a>
+
+            <a href="#gz4-recomendaciones">
+                Recomendaciones ↗
+            </a>
+
+            <a href="#gz4-comparador">
+                Comparador ↗
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================================
+         CIERRE DE GAMEZONE 4.0
+    ============================================ -->
+
+    <div class="gz4-final">
+
+        <div>
+
+            <p class="gz4-eyebrow">
+                / GAMEZONE — ULTIMATE EXPERIENCE
+            </p>
+
+            <h3>
+                TU HISTORIA.
+                <span>TU LEGADO GAMER.</span>
+            </h3>
+
+            <p>
+                Cada juego es una aventura.
+                Cada desafío, una oportunidad.
+                Cada logro, una nueva historia.
+            </p>
+
+        </div>
+
+        <a
+            href="#gamezone-4"
+            class="gz4-boton-principal"
+        >
+            Volver arriba ↑
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================================================
+     FIN GAMEZONE 4.0
+     FASES 37 A 46
+================================================ -->
+
+    <!-- ACERCA DEL PROYECTO -->
+    <section class="acerca"
+             id="acerca"
+             aria-labelledby="acerca-titulo">
+
+      <div class="contenedor acerca-interior">
+
+        <div>
+          <p class="eyebrow">
+            / SOBRE EL PROYECTO
+          </p>
+
+          <h2 id="acerca-titulo">
+            NO ALOJAMOS JUEGOS.<br />
+            <span>LOS DESCUBRIMOS.</span>
+          </h2>
+        </div>
+
+        <p>
+          GameZone es un catálogo informativo
+          independiente. Los enlaces llevan a sitios
+          oficiales o a búsquedas dentro de tiendas
+          oficiales, donde cada persona puede revisar
+          requisitos, precios y disponibilidad.
+
+          No distribuimos archivos de instalación.
+        </p>
+
+      </div>
+    </section>
+
+<!-- FASE 47 — CENTRO DE CONFIGURACIÓN GAMER -->
+<section class="gz5-ajustes contenedor"
+         id="configuracion-gamer"
+         aria-labelledby="gz5-titulo">
+
+  <p class="eyebrow">/ GAMEZONE 5.0 — FASE 47</p>
+
+  <h2 id="gz5-titulo">
+    CENTRO DE <span>CONFIGURACIÓN.</span>
+  </h2>
+
+  <p>
+    Personaliza tu experiencia GameZone.
+    Tus preferencias se guardan en este navegador.
+  </p>
+
+  <div class="gz5-opciones">
+
+    <label class="gz5-opcion">
+      <span>
+        <strong>Tarjetas compactas</strong>
+        <small>Reduce el tamaño de las tarjetas.</small>
+      </span>
+      <input type="checkbox" id="gz5-compacto">
+    </label>
+
+    <label class="gz5-opcion">
+      <span>
+        <strong>Reducir animaciones</strong>
+        <small>Desactiva movimientos innecesarios.</small>
+      </span>
+      <input type="checkbox" id="gz5-movimiento">
+    </label>
+
+    <label class="gz5-opcion">
+      <span>
+        <strong>Contraste alto</strong>
+        <small>Mejora la visibilidad de los elementos.</small>
+      </span>
+      <input type="checkbox" id="gz5-contraste">
+    </label>
+
+  </div>
+
+  <div class="gz5-acciones">
+    <button type="button" id="gz5-restaurar">
+      Restaurar configuración
+    </button>
+
+    <span id="gz5-estado"
+          role="status"
+          aria-live="polite">
+      Configuración lista.
+    </span>
+  </div>
+
+</section>
+
+<!-- ==========================================
+     FASE 48 — DIAGNÓSTICO GAMEZONE
+========================================== -->
+
+<section class="gz48-diagnostico contenedor"
+         id="diagnostico-gamer"
+         aria-labelledby="gz48-titulo">
+
+  <p class="eyebrow">/ GAMEZONE 5.0 — FASE 48</p>
+
+  <h2 id="gz48-titulo">
+    CENTRO DE <span>DIAGNÓSTICO.</span>
+  </h2>
+
+  <p class="gz48-descripcion">
+    Comprueba el estado del catálogo, los enlaces,
+    el almacenamiento y la configuración de GameZone.
+  </p>
+
+  <div class="gz48-panel">
+
+    <div class="gz48-cabecera">
+      <div>
+        <span class="gz48-etiqueta">ESTADO DEL SISTEMA</span>
+        <h3 id="gz48-estado-general">Sin analizar</h3>
+      </div>
+
+      <div class="gz48-puntuacion">
+        <strong id="gz48-porcentaje">--</strong>
+        <span>COMPROBACIONES SUPERADAS</span>
+      </div>
+    </div>
+
+    <div class="gz48-barra">
+      <div id="gz48-progreso"></div>
+    </div>
+
+    <div id="gz48-resultados"
+         class="gz48-resultados"
+         aria-live="polite">
+      <p>Presiona el botón para comenzar el diagnóstico.</p>
+    </div>
+
+    <div class="gz48-acciones">
+      <button type="button" id="gz48-analizar">
+        Ejecutar diagnóstico
+      </button>
+
+      <button type="button" id="gz48-exportar" disabled>
+        Descargar informe
+      </button>
+    </div>
+
+    <p id="gz48-mensaje" role="status"></p>
+
+  </div>
+
+</section>
+
+<!-- ==========================================
+     GAMEZONE 5.0 — FASE 49
+     CENTRO DE AYUDA GAMER
+========================================== -->
+
+<section class="gz49-ayuda contenedor"
+         id="centro-ayuda"
+         aria-labelledby="gz49-titulo">
+
+  <p class="eyebrow">/ GAMEZONE 5.0 — FASE 49</p>
+
+  <h2 id="gz49-titulo">
+    CENTRO DE <span>AYUDA.</span>
+  </h2>
+
+  <p class="gz49-descripcion">
+    ¿Tienes dudas sobre GameZone?
+    Encuentra respuestas y aprende a utilizar
+    todas las herramientas de nuestra plataforma.
+  </p>
+
+  <div class="gz49-buscador">
+    <label for="gz49-buscar">Buscar una pregunta</label>
+
+    <input type="search"
+           id="gz49-buscar"
+           placeholder="Ejemplo: ¿Cómo guardar favoritos?"
+           autocomplete="off">
+  </div>
+
+  <div class="gz49-contador"
+       id="gz49-contador"
+       role="status"
+       aria-live="polite">
+    Preguntas disponibles
+  </div>
+
+  <div class="gz49-preguntas" id="gz49-preguntas">
+
+    <details class="gz49-pregunta">
+      <summary>¿Qué es GameZone?</summary>
+      <p>
+        GameZone es un catálogo informativo de videojuegos
+        donde puedes explorar títulos, consultar sus detalles
+        y encontrar enlaces a tiendas o sitios oficiales.
+      </p>
+    </details>
+
+    <details class="gz49-pregunta">
+      <summary>¿Cómo busco un videojuego?</summary>
+      <p>
+        Entra al catálogo y utiliza el buscador.
+        Puedes escribir el nombre o filtrar por género.
+      </p>
+    </details>
+
+    <details class="gz49-pregunta">
+      <summary>¿Cómo guardo mis videojuegos favoritos?</summary>
+      <p>
+        Busca un juego y utiliza su botón de favoritos.
+        GameZone guarda tus preferencias en este navegador.
+      </p>
+    </details>
+
+    <details class="gz49-pregunta">
+      <summary>¿Puedo descargar videojuegos desde GameZone?</summary>
+      <p>
+        GameZone no almacena instaladores.
+        Sus enlaces te dirigen a tiendas y páginas
+        externas para consultar los videojuegos.
+      </p>
+    </details>
+
+    <details class="gz49-pregunta">
+      <summary>¿Qué es la lista de deseos?</summary>
+      <p>
+        Es una herramienta para guardar videojuegos
+        que te gustaría conseguir o explorar después.
+      </p>
+    </details>
+
+    <details class="gz49-pregunta">
+      <summary>¿Cómo comparo videojuegos?</summary>
+      <p>
+        Entra al comparador de GameZone 4.0 y selecciona
+        los títulos que deseas comparar.
+      </p>
+    </details>
+
+    <details class="gz49-pregunta">
+      <summary>¿Cómo cambio la apariencia de GameZone?</summary>
+      <p>
+        Visita el Centro de Configuración Gamer.
+        Puedes activar tarjetas compactas,
+        reducir animaciones y aumentar el contraste.
+      </p>
+    </details>
+
+    <details class="gz49-pregunta">
+      <summary>¿Qué hace el Centro de Diagnóstico?</summary>
+      <p>
+        Comprueba el formato del catálogo, los identificadores,
+        los enlaces HTTPS y los datos almacenados.
+        No garantiza que los sitios externos estén disponibles.
+      </p>
+    </details>
+
+    <details class="gz49-pregunta">
+      <summary>¿Se conservan mis datos al cerrar GameZone?</summary>
+      <p>
+        Los datos guardados mediante almacenamiento local
+        normalmente permanecen al cerrar el navegador,
+        siempre que no se borren sus datos.
+      </p>
+    </details>
+
+    <details class="gz49-pregunta">
+      <summary>¿Cómo puedo solucionar un problema?</summary>
+      <p>
+        Ejecuta el Centro de Diagnóstico Gamer.
+        También puedes recargar la página y comprobar
+        que los archivos del proyecto estén disponibles.
+      </p>
+    </details>
+
+  </div>
+
+  <p id="gz49-sin-resultados" hidden>
+    No encontramos preguntas con esa búsqueda.
+  </p>
+
+  <div class="gz49-accesos">
+    <h3>ACCESOS RÁPIDOS</h3>
+
+    <div class="gz49-enlaces">
+      <a href="#catalogo">Explorar catálogo ↗</a>
+      <a href="#perfil">Mi perfil gamer ↗</a>
+      <a href="#configuracion-gamer">Configuración ↗</a>
+      <a href="#diagnostico-gamer">Diagnóstico ↗</a>
+    </div>
+  </div>
+
+  <div class="gz49-acciones">
+    <button type="button" id="gz49-limpiar">
+      Limpiar búsqueda
+    </button>
+
+    <a href="#inicio" class="gz49-volver">
+      Volver al inicio ↑
+    </a>
+  </div>
+
+</section>
+
+<!-- ==========================================
+     GAMEZONE 5.0 — FASE 50
+     CENTRO DE LANZAMIENTO
+========================================== -->
+
+<section class="gz50-lanzamiento contenedor"
+         id="lanzamiento-gamer"
+         aria-labelledby="gz50-titulo">
+
+  <p class="eyebrow">/ GAMEZONE 5.0 — FASE FINAL</p>
+
+  <h2 id="gz50-titulo">
+    GAMEZONE <span>50 / 50.</span>
+  </h2>
+
+  <p class="gz50-descripcion">
+    Bienvenido al Centro de Lanzamiento.
+    Comprueba tu proyecto y prepara GameZone
+    para su publicación.
+  </p>
+
+  <div class="gz50-panel">
+
+    <div class="gz50-encabezado">
+      <div>
+        <span class="gz50-etiqueta">
+          ESTADO DE PREPARACIÓN
+        </span>
+
+        <h3 id="gz50-estado">
+          Preparación pendiente
+        </h3>
+      </div>
+
+      <div class="gz50-porcentaje">
+        <strong id="gz50-numero">0%</strong>
+        <span>LISTA COMPLETADA</span>
+      </div>
+    </div>
+
+    <div class="gz50-barra">
+      <div id="gz50-progreso"></div>
+    </div>
+
+    <p id="gz50-contador">
+      0 de 6 tareas completadas
+    </p>
+
+    <div class="gz50-verificaciones">
+
+      <h3>LISTA DE LANZAMIENTO</h3>
+
+      <label class="gz50-tarea">
+        <input type="checkbox" data-gz50="html">
+        <span>HTML revisado y funcionando</span>
+      </label>
+
+      <label class="gz50-tarea">
+        <input type="checkbox" data-gz50="css">
+        <span>Diseño CSS comprobado</span>
+      </label>
+
+      <label class="gz50-tarea">
+        <input type="checkbox" data-gz50="javascript">
+        <span>JavaScript sin errores detectados</span>
+      </label>
+
+      <label class="gz50-tarea">
+        <input type="checkbox" data-gz50="catalogo">
+        <span>Catálogo JSON comprobado</span>
+      </label>
+
+      <label class="gz50-tarea">
+        <input type="checkbox" data-gz50="funciones">
+        <span>Funciones principales probadas</span>
+      </label>
+
+      <label class="gz50-tarea">
+        <input type="checkbox" data-gz50="responsive">
+        <span>Diseño revisado en celular y PC</span>
+      </label>
+
+    </div>
+
+    <div class="gz50-herramientas">
+
+      <h3>HERRAMIENTAS DEL SISTEMA</h3>
+
+      <div class="gz50-enlaces">
+        <a href="#catalogo">Catálogo ↗</a>
+        <a href="#perfil">Perfil gamer ↗</a>
+        <a href="#diagnostico-gamer">
+          Diagnóstico ↗
+        </a>
+        <a href="#centro-ayuda">
+          Centro de ayuda ↗
+        </a>
+      </div>
+
+    </div>
+
+    <div class="gz50-archivos">
+
+      <h3>COMPROBACIÓN DE ARCHIVOS</h3>
+
+      <button type="button" id="gz50-comprobar">
+        Comprobar archivos
+      </button>
+
+      <div id="gz50-archivos-resultado"
+           aria-live="polite">
+        Todavía no se han comprobado los archivos.
+      </div>
+
+    </div>
+
+    <div class="gz50-acciones">
+
+      <button type="button" id="gz50-diagnostico">
+        Ir al diagnóstico
+      </button>
+
+      <button type="button" id="gz50-reiniciar">
+        Reiniciar lista
+      </button>
+
+    </div>
+
+    <div class="gz50-final" id="gz50-final" hidden>
+      <span>★ GAMEZONE ★</span>
+      <h3>¡LISTA COMPLETADA!</h3>
+      <p>
+        Has completado la lista de preparación.
+        Realiza la revisión final antes de publicar.
+      </p>
+    </div>
+
+    <p id="gz50-mensaje"
+       role="status"
+       aria-live="polite"></p>
+
+  </div>
+
+</section>
+
+  </main>
+
+  <!-- NOTIFICACIONES -->
+  <div id="gz-notificacion"
+       class="gz-notificacion"
+       role="status"
+       aria-live="polite"
+       hidden>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie">
+
+    <div class="contenedor pie-interior">
+
+      <span class="logo logo-pie">
+        GAME<span>ZONE</span>
+        <span class="logo-punto">.</span>
+      </span>
+
+      <p>
+        © 2026 GameZone · Proyecto educativo independiente.
+      </p>
+
+      <a href="#inicio">
+        Volver arriba ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+  <!-- VENTANA DE DETALLES -->
+  <dialog
+    id="ficha"
+    class="dialogo"
+    aria-labelledby="ficha-nombre">
+
+    <div class="dialogo-contenido">
+
+      <button
+        type="button"
+        id="cerrar-ficha"
+        class="cerrar-ficha"
+        aria-label="Cerrar ficha">
+        ✕
+      </button>
+
+      <div
+        class="ficha-visual"
+        id="ficha-visual">
+
+        <span id="ficha-iniciales"></span>
+
+        <small>
+          GAMEZONE / FICHA
+        </small>
+
+      </div>
+
+      <div class="ficha-texto">
+
+        <p class="eyebrow" id="ficha-genero"></p>
+
+        <h2 id="ficha-nombre"></h2>
+
+        <p id="ficha-descripcion"></p>
+
+        <p class="ficha-plataformas">
+          <strong>Plataformas:</strong>
+          <span id="ficha-plataformas"></span>
+        </p>
+
+        <a
+          id="ficha-enlace"
+          class="boton boton-claro"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://store.steampowered.com/">
+
+          Ir al sitio oficial ↗
+
+        </a>
+
+        <p class="nota-enlace">
+          Los precios, requisitos y disponibilidad
+          se consultan en la tienda o sitio enlazado.
+        </p>
+
+        <!-- FASE 6.2 — JUEGOS SIMILARES -->
+        <section class="ficha-similares"
+                 aria-labelledby="ficha-similares-titulo">
+
+          <h3 id="ficha-similares-titulo">
+            TAMBIÉN TE PUEDE <span>GUSTAR.</span>
+          </h3>
+
+          <div id="lista-similares"
+               class="similares-cuadricula">
+          </div>
+
+        </section>
+
+      </div>
+
+    </div>
+
+  </dialog>
+
+</body>
+</html>
